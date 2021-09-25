@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+
+.clockwise {
+    animation: clockwise 2s linear infinite forwards;
+    animation-duration: 10s;
+    transform-origin: -79% 23.5%;
+}
+
+.counterclockwise {
+    animation: counterclockwise 2s linear infinite backwards;
+    animation-duration: 10s;
+    transform-origin: -79% 23.5%;
+}
+
+@keyframes clockwise {
+    from {
+        transform:rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+
+}
+
+@keyframes counterclockwise {
+    from {
+        transform:rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+}
+
